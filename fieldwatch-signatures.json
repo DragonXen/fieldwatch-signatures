@@ -1,7 +1,7 @@
 {
     "format": "radio-signatures",
     "formatVersion": 1,
-    "exportedAt": "2026-11-25T17:39:24.062534Z",
+    "exportedAt": "2026-11-25T20:31:08.315909Z",
     "appVersion": "1.2.2",
     "catalogVersion": 118,
     "publisher": "fieldwatch",
@@ -68418,7 +68418,7 @@
         },
         {
             "id": "ad0cdf84-9c7b-406b-84d7-718d143c77ad",
-            "name": "MXT - Vehicle Tracker",
+            "name": "MXT",
             "enabled": true,
             "matchAny": true,
             "colorIndex": 7,
@@ -68479,6 +68479,38 @@
                     "dataPrefixHex": "",
                     "radio": null,
                     "enabled": true
+                },
+                {
+                    "kind": "OUI",
+                    "text": "48:51:CF",
+                    "companyId": 0,
+                    "dataPrefixHex": "",
+                    "radio": null,
+                    "enabled": true
+                },
+                {
+                    "kind": "OUI",
+                    "text": "30:E1:F1",
+                    "companyId": 0,
+                    "dataPrefixHex": "",
+                    "radio": null,
+                    "enabled": true
+                },
+                {
+                    "kind": "OUI",
+                    "text": "80:85:44",
+                    "companyId": 0,
+                    "dataPrefixHex": "",
+                    "radio": null,
+                    "enabled": true
+                },
+                {
+                    "kind": "OUI",
+                    "text": "18:0D:2C",
+                    "companyId": 0,
+                    "dataPrefixHex": "",
+                    "radio": null,
+                    "enabled": true
                 }
             ],
             "minPeers": 0,
@@ -68525,7 +68557,7 @@
         },
         {
             "id": "ba59ea43-6e61-4a35-b847-7307ad62fc00",
-            "name": "Yamaha Small Communication Control Unit",
+            "name": "Yamaha",
             "enabled": true,
             "matchAny": true,
             "colorIndex": 7,
@@ -68551,7 +68583,40 @@
             "peerWindowSec": 60,
             "clusterByOui": false,
             "sequentialMac": false,
-            "notes": "This is the Bluetooth Low Energy (BLE) module built into Yamaha motorcycles and scooters to connect with the official Y-Connect app.",
+            "notes": "Yamaha Small Communication Control Unit (YSCCU)\nThis is the Bluetooth Low Energy (BLE) module built into Yamaha motorcycles and scooters to connect with the official Y-Connect app.",
+            "attentionNote": "",
+            "builtIn": false,
+            "kind": "VEHICLE"
+        },
+        {
+            "id": "6156d702-8787-4cd8-bdbe-c22216425d15",
+            "name": "Rodstar",
+            "enabled": true,
+            "matchAny": false,
+            "colorIndex": 7,
+            "rules": [
+                {
+                    "kind": "SERVICE_UUID",
+                    "text": "0000AF30-0000-1000-8000-00805F9B34FB; AF30",
+                    "companyId": 0,
+                    "dataPrefixHex": "",
+                    "radio": null,
+                    "enabled": true
+                },
+                {
+                    "kind": "OUI",
+                    "text": "RS-*BR",
+                    "companyId": 0,
+                    "dataPrefixHex": "",
+                    "radio": null,
+                    "enabled": true
+                }
+            ],
+            "minPeers": 0,
+            "peerWindowSec": 60,
+            "clusterByOui": false,
+            "sequentialMac": false,
+            "notes": "Likely automotive Bluetooth LE head unit, advertised as “RS-???BR(BLE).” The device exposes service UUID AF30 and is connectable. Vehicle-related device classification is tentative; the advertisement does not independently confirm the product type.",
             "attentionNote": "",
             "builtIn": false,
             "kind": "VEHICLE"
