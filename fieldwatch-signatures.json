@@ -1,7 +1,7 @@
 {
     "format": "radio-signatures",
     "formatVersion": 1,
-    "exportedAt": "2026-11-24T19:36:37.873721Z",
+    "exportedAt": "2026-11-25T17:39:24.062534Z",
     "appVersion": "1.2.2",
     "catalogVersion": 118,
     "publisher": "fieldwatch",
@@ -1171,10 +1171,18 @@
                     "enabled": true
                 },
                 {
-                    "kind": "SERVICE_DATA",
+                    "kind": "MANUFACTURER_DATA",
                     "text": "0x004C",
-                    "companyId": 0,
+                    "companyId": 76,
                     "dataPrefixHex": "16",
+                    "radio": null,
+                    "enabled": true
+                },
+                {
+                    "kind": "MANUFACTURER_DATA",
+                    "text": "",
+                    "companyId": 76,
+                    "dataPrefixHex": "01",
                     "radio": null,
                     "enabled": true
                 }
@@ -68463,6 +68471,14 @@
                     "dataPrefixHex": "",
                     "radio": null,
                     "enabled": true
+                },
+                {
+                    "kind": "OUI",
+                    "text": "24:FD:0D",
+                    "companyId": 0,
+                    "dataPrefixHex": "",
+                    "radio": null,
+                    "enabled": true
                 }
             ],
             "minPeers": 0,
@@ -68506,6 +68522,39 @@
             "attentionNote": "",
             "builtIn": false,
             "kind": "PHONE"
+        },
+        {
+            "id": "ba59ea43-6e61-4a35-b847-7307ad62fc00",
+            "name": "Yamaha Small Communication Control Unit",
+            "enabled": true,
+            "matchAny": true,
+            "colorIndex": 7,
+            "rules": [
+                {
+                    "kind": "NAME_GLOB",
+                    "text": "YSCCU_*",
+                    "companyId": 0,
+                    "dataPrefixHex": "",
+                    "radio": "BLE",
+                    "enabled": true
+                },
+                {
+                    "kind": "SERVICE_UUID",
+                    "text": "7905F431B5CE4E99A40F4B1E122D00D0",
+                    "companyId": 0,
+                    "dataPrefixHex": "",
+                    "radio": "BLE",
+                    "enabled": true
+                }
+            ],
+            "minPeers": 0,
+            "peerWindowSec": 60,
+            "clusterByOui": false,
+            "sequentialMac": false,
+            "notes": "This is the Bluetooth Low Energy (BLE) module built into Yamaha motorcycles and scooters to connect with the official Y-Connect app.",
+            "attentionNote": "",
+            "builtIn": false,
+            "kind": "VEHICLE"
         }
     ]
 }
